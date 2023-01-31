@@ -1,0 +1,542 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+:root{
+    --primaria: #7ABC27;
+    --geral: #CAC24A;
+    --ajuste: 0%;
+}
+
+*{
+    font-family: 'Roboto', sans-serif;  
+    color: #152500;
+    letter-spacing: 1px;
+}
+
+p, address{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+/*Navbar*/
+
+
+.row{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+
+#mecanico1-img{
+    background-image: url(../img/mecanico.jpg);
+    
+}
+#mecanico2-img{
+    background-image: url(../img/mecanico.jpg);
+    
+}
+
+#header-img{
+    background-image: url(../img/colheitadeira.jpg);
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: .5em;
+}
+
+header{
+    position: relative;
+    background-color: var(--geral);
+    height: 20vh;
+}
+
+.menu{
+    transform: translatey(40%);
+}
+
+
+.menu-img{
+    position: relative;
+    width: 100vh;
+}
+
+.menu-list{
+    position: absolute;
+    list-style: none;
+    display: flex;
+}
+
+.menu-item a{
+    margin-left: 1em;
+    font-size: 2em;   
+    font-weight: 900;
+    text-decoration: underline .10em rgba(0, 0, 0, 0);
+    transition: 1s;
+}
+
+.menu-item a:hover{
+    text-decoration: underline .10em rgba(0, 0, 0, 1);
+}
+
+.logo-img{
+    transform: translateY(15%);
+    margin: auto;
+    border-radius: 50%;
+    height: 13vh;
+    width: 13vh;
+    background-color: #ccc;
+}
+
+
+.components{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto;
+}
+
+.title-text{
+    position: absolute;
+    font-weight: 900;
+    font-size: 2.3em;
+    transform: translate(0, 35%);
+}
+
+.moldura{
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    left: 4px;
+    bottom: 4px;
+    clip-path: polygon(10% 0%, 100% 0, 100% 90%, 90% 100%, 0 100%, 0% 10%);
+    background-color: #fff;
+}
+
+.moldura-interna{
+    position: absolute;
+    right: 3px;
+    top: 3px;
+    left: 3px;
+    bottom: 3px;
+    clip-path: polygon(10% 0%, 100% 0, 100% 90%, 90% 100%, 0 100%, 0% 10%);
+    background-color: var(--geral);
+}
+
+.cards{
+    position: relative;
+    height: 250px;
+    width: 220px;
+    background-color: var(--geral);
+    clip-path: polygon(10% 0%, 100% 0, 100% 90%, 90% 100%, 0 100%, 0% 10%);
+}
+
+.card-text{
+    margin: .7em;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+.card-title h5{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.cards-content, .servicos-content, #empresa, .colheitadeira-container{
+    position: relative;
+}
+
+.container-svg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -25px;
+    right: -25px;
+    height: 50px;
+    width: 50px;
+    clip-path: circle(50% at 50% 50%);
+    background-color: var(--primaria);
+}
+.trator{
+    position: absolute;
+    transform: scaleX(-1);
+    right: -170px;
+    bottom: -20px;
+}
+
+.card-text{
+    font-weight: 400;
+    font-size: 1.4em;
+}
+
+.sobre-container{
+    position: relative;
+    padding: 25px 10px;
+    background-color: #CAC24A;
+    clip-path: polygon(5% 0%, 100% 0, 100% 90%, 95% 100%, 0 100%, 0% 10%);
+}
+
+.equipe-card{
+    height: 400px;
+    width: 350px;
+    background-color: var(--geral);
+    clip-path: polygon(10% 0%, 100% 0, 100% 90%, 90% 100%, 0 100%, 0% 10%);
+}
+.equipe-name{
+    border-bottom: 3px solid var(--primaria);
+    margin-bottom: 1em;
+}
+.equipe-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.mecanico{
+    background-size: cover;
+    width: 330px;
+    height: 380px;
+    clip-path: polygon(10% 0%, 100% 0, 100% 90%, 90% 100%, 0 100%, 0% 10%);
+}
+.contato-container{
+    padding: 1em;
+    background-color: #CAC24A;
+    clip-path: polygon(5% 0%, 100% 0, 100% 95%, 95% 100%, 0 100%, 0% 8%);
+    margin-bottom: 20em;
+}
+.map{
+    width: 60vh;
+    height: 50vh;
+    clip-path: polygon(7% 0%, 100% 0, 100% 100%, 100% 100%, 0 100%, 0% 7%);
+}
+.endereco-svg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: var(--primaria);
+    margin-right: 1em;
+}
+
+
+.milho{
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 5vh;
+    width: 5vh;
+    transform: rotate(-180deg);
+    bottom: -25px;
+    left: 150px;
+}
+.milho2{
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 5vh;
+    width: 5vh;
+    top: 135px;
+    right: 150px;
+    z-index: 999;
+}
+
+.text-contato{
+    font-size: 1.2em;
+    font-weight: 400;
+}
+.colheitadeira-img{
+   position: absolute;
+   bottom: 0;
+   left: 480px;
+}
+
+footer{
+    text-align: center;
+    font-weight: 500;
+    background-color: var(--primaria);
+    padding: 1em 0;
+}
+
+
+
+@media (max-width: 1400px) {
+    .trator, .colheitadeira-container, .trigo-img{
+        display: none;
+    }
+}
+
+@media (min-width: 992px ){
+    .navbar{
+        display: none !important;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px){
+    .milho{
+        left: 100px;
+    }
+    .milho2{
+        right: 100px;
+    }
+}
+@media (min-width: 1200px) and (max-width: 1400px){
+    .milho{
+        left: 130px;
+    }
+    .milho2{
+        right: 130px;
+    }
+}
+
+
+
+@media (max-width: 992px){
+
+    .menu, .logo-img, .navbar{
+        display: none;
+    }
+    
+    .navbar{
+        background-color: var(--geral);
+        font-weight: 500;
+    }
+
+    .logo-img-menor{
+        margin: auto;
+        width: 10vh;
+        
+    }
+    header{
+        height: 10vh;
+    }
+
+    .milho{
+        left: -5px;
+    }
+    .milho2{
+        right: -5px;
+    }
+    .moldura{
+        position: absolute;
+        right: 4px;
+        top: 4px;
+        left: 4px;
+        bottom: 4px;
+        clip-path: polygon(10% 0%, 100% 0, 100% 90%, 90% 100%, 0 100%, 0% 10%);
+        background-color: #fff;
+    }
+    
+    .moldura-interna{
+        position: absolute;
+        right: 3px;
+        top: 3px;
+        left: 3px;
+        bottom: 3px;
+        clip-path: polygon(10% 0%, 100% 0, 100% 90%, 90% 100%, 0 100%, 0% 10%);
+        background-color: var(--geral);
+    }
+    
+    .cards{
+        position: relative;
+        height: 230px;
+        width: 200px;
+        background-color: var(--geral);
+        clip-path: polygon(10% 0%, 100% 0, 100% 90%, 90% 100%, 0 100%, 0% 10%);
+    }
+    
+    .card-tex{
+        margin: .7em;
+        font-size: 1.2em;
+        font-weight: 400;
+    }
+    
+    .card-title h5{
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+    .cards-content{
+        position: relative;
+    }
+    .container-svg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: -20px;
+        right: 35px;
+        height: 50px;
+        width: 50px;
+        clip-path: circle(50% at 50% 50%);
+        background-color: var(--primaria);
+    }
+    .sobre-container{
+        padding: 25px 10px;
+        margin: auto;
+        background-color: #CAC24A;
+        clip-path: polygon(5% 0%, 100% 0, 100% 90%, 95% 100%, 0 100%, 0% 10%);
+    }
+    .equipe-card{
+        margin: auto;
+        height: 350px;
+        width: 290px;
+        background-color: var(--geral);
+        clip-path: polygon(15% 0%, 100% 0, 100% 90%, 90% 100%, 0 100%, 0% 10%);
+    }
+    .equipe-name{
+        text-align: center;
+        border-bottom: 3px solid var(--primaria);
+        margin: 1em auto;
+    }    
+    .mecanico{
+        background-size: cover;
+        width: 270px;
+        height: 330px;
+        clip-path: polygon(15% 0%, 100% 0, 100% 90%, 90% 100%, 0 100%, 0% 10%);
+    }
+    .contato-container{
+        padding: 10px;
+        background-color: #CAC24A;
+        clip-path: polygon(5% 0%, 100% 0, 100% 95%, 95% 100%, 0 100%, 0% 8%);
+    }
+    .map{
+        width: 100%;
+        height: 20em;
+        clip-path: polygon(5% 0%, 100% 0, 100% 100%, 100% 100%, 0 100%, 0% 12%);
+    }
+    .endereco-svg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background-color: var(--primaria);
+        margin-right: 1em;
+    }
+    
+}
+
+@media (max-width: 767px){
+    #header-img{
+        display: none;
+    }
+    .cards-content{
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .cards{
+        position: relative;
+        height: 250px;
+        width: 250px;
+        background-color: var(--geral);
+        clip-path: polygon(10% 0%, 100% 0, 100% 90%, 90% 100%, 0 100%, 0% 10%);
+    }
+
+    .card-text{
+        margin-left: .7em;
+        font-size: 1.2em;
+        font-weight: 400;
+    }
+
+    .card-title h5{
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+
+    .moldura{
+        position: absolute;
+        right: 4px;
+        top: 4px;
+        left: 4px;
+        bottom: 4px;
+        clip-path: polygon(10% 0%, 100% 0, 100% 90%, 90% 100%, 0 100%, 0% 10%);
+        background-color: #fff;
+    }
+    
+    .moldura-interna{
+        position: absolute;
+        right: 3px;
+        top: 3px;
+        left: 3px;
+        bottom: 3px;
+        clip-path: polygon(10% 0%, 100% 0, 100% 90%, 90% 100%, 0 100%, 0% 10%);
+        background-color: var(--geral);
+    }
+    
+    .container-svg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: -20px;
+        right: -20px;
+        height: 50px;
+        width: 50px;
+        clip-path: circle(50% at 50% 50%);
+        background-color: var(--primaria);
+    }
+    .sobre-container{
+        padding: 25px 10px;
+        margin: auto;
+        background-color: #CAC24A;
+        clip-path: polygon(15% 0%, 100% 0, 100% 90%, 90% 100%, 0 100%, 0% 10%);
+    }
+   
+
+    .equipe-card{
+        margin: auto;
+        height: 350px;
+        width: 290px;
+        background-color: var(--geral);
+        clip-path: polygon(15% 0%, 100% 0, 100% 90%, 90% 100%, 0 100%, 0% 10%);
+    }
+    .equipe-name{
+        text-align: center;
+        border-bottom: 3px solid var(--primaria);
+        margin: 1em auto;
+    }
+
+    .equipe-name h3{
+        font-size: 2em;
+        font-weight: 900;
+    }
+    
+    .mecanico{
+        background-size: cover;
+        width: 270px;
+        height: 330px;
+        clip-path: polygon(15% 0%, 100% 0, 100% 90%, 90% 100%, 0 100%, 0% 10%);
+    }
+    .contato-container{
+        padding: 10px;
+        background-color: #CAC24A;
+        clip-path: polygon(10% 0%, 100% 0, 100% 95%, 90% 100%, 0 100%, 0% 5%);
+    }
+    .map{
+        width: 100%;
+        height: 18.75em;
+        clip-path: polygon(10% 0%, 100% 0, 100% 100%, 100% 100%, 0 100%, 0% 8%);
+    }
+    .endereco-svg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background-color: var(--primaria);
+        margin-right: 1em;
+    }
+   .info-content{
+    height: 27vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+   }
+}   
+
+
+
